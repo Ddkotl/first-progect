@@ -1,0 +1,25 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "type": "chrome",
+        //     "request": "launch",
+        //     "name": "Open index.html",
+        //     "file": "/home/dima/Lamp/www/first-progect/index.html"
+        // }
+        {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            // "port": 9000, // Xdebug 2
+            "port": 9003, // Xdebug 3
+            "pathMappings": {
+              // "/var/www/html": "${workspaceFolder}/www" // if you have opened VSCODE in root folder
+              "/var/www/html": "${workspaceFolder}" // if you have opened VSCODE in ./www folder
+            }
+          }
+    ]
+}
